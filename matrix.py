@@ -2,19 +2,19 @@ def forEvenNumber(n):
     arr = [[(n * y) + x + 1 for x in range(n)] for y in range(n)]
     for i in range(0, n // 4):
         for j in range(0, n // 4):
-            arr[i][j] = (n * n + 1) - arr[i][j];
+            arr[i][j] = (n * n + 1) - arr[i][j]
     for i in range(0, n // 4):
         for j in range(3 * (n // 4), n):
-            arr[i][j] = (n * n + 1) - arr[i][j];
+            arr[i][j] = (n * n + 1) - arr[i][j]
     for i in range(3 * (n // 4), n):
         for j in range(0, n // 4):
-            arr[i][j] = (n * n + 1) - arr[i][j];
+            arr[i][j] = (n * n + 1) - arr[i][j]
     for i in range(3 * (n // 4), n):
         for j in range(3 * (n // 4), n):
-            arr[i][j] = (n * n + 1) - arr[i][j];
+            arr[i][j] = (n * n + 1) - arr[i][j]
     for i in range(n // 4, 3 * (n // 4)):
         for j in range(n // 4, 3 * (n // 4)):
-            arr[i][j] = (n * n + 1) - arr[i][j];
+            arr[i][j] = (n * n + 1) - arr[i][j]
     print("\nSum of all row, column and diagonals = ",
           n * (n * n + 1) // 2, "\n")
     for i in range(n):
