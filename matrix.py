@@ -57,4 +57,4 @@ if n%2==0:
     forEvenNumber(n)
 else:
     forOddNumber(n)
-print("\nThank You :)")
+print("\nThank You : )")
